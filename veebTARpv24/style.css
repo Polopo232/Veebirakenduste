@@ -1,0 +1,173 @@
+header{
+    background-color: pink;
+    letter-spacing: 0.1cm;
+    padding: 2%;
+    font-variant: small-caps;
+    font-family: "Ink Free";
+    font-size: x-large;
+    background-image: url('pilot.jpg');
+    background-repeat: no-repeat;
+    background-size: 150px 200px;
+}
+header h1{
+    margin-left: 150px;
+}
+img{
+    width: 250px;
+}
+footer{
+    background-color: #b5b6b5;
+    border-top: 2px solid black; /*dotted, dashed, double */
+    padding-top: 1%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+section#osa1{
+    border-left: 1px double lightcoral;
+    border-right: 1px double lightcoral;
+    width: 50%;
+    border-radius: 100px;
+    padding: 2%;
+    display: inline-block;
+    /*font-variant: small-caps;*/
+    /*font-family: "Broadway";*/
+}
+section#osa1 h2{
+    font-variant: small-caps;
+    font-family: "Cooper Black";
+    font-size: x-large;
+    text-align: center;
+}
+section#osa1 div{
+    padding: 1%;
+    font-family: "Sour Gummy";
+}
+section#osa2{
+    border-left: 5px dashed lightpink;
+    border-right: 5px dashed lightpink;
+    width: 30%;
+    border-radius: 60px;
+    padding: 2%;
+    text-align: center;
+    display: inline-block;
+}
+section#osa2 h2{
+     font-variant: small-caps;
+     font-family: "Broadway";
+ }
+section#osa2 img{
+    padding: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #b5b6b5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    float: left;
+    border-left: 1px double lightpink;
+    border-right: 1px double lightpink;
+    border-radius: 50px;
+}
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-variant: small-caps;
+    font-family: "Impact";
+}
+nav ul li a:hover {
+    background-color: lightpink;
+    color: white;
+    border-radius: 50px;
+}
+
+section#teemad {
+    border-left: 1px double lightpink;
+    border-right: 1px double lightpink;
+    width: 45%;
+    border-radius: 50px;
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+    background: #fff0f5;
+}
+
+section#teemad h2 {
+    font-variant: small-caps;
+    font-family: "Elephant";
+    color: hotpink;
+    margin-bottom: 20px;
+}
+section#teemad li {
+    background-color: white;
+    color:black;
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: default;
+    user-select: none;
+    min-width: 100px;
+    text-align: center;
+}
+selection#teemad ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+section#lingid {
+    border-left: 1px double lightpink;
+    border-right: 1px double lightpink;
+    width: 45%;
+    border-radius: 50px;
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+    background: #fff0f5;
+}
+section#lingid h2 {
+    font-variant: small-caps;
+    font-family: "Elephant";
+    color: hotpink;
+    margin-bottom: 20px;
+}
+section#lingid li {
+    overflow: hidden;
+    text-align: center;
+    margin: 4%;
+}
+section#lingid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+section#lingid li a{
+    display: flex;
+    padding: 12px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+section#lingid li a:hover{
+    background-color: lightpink;
+    color: white;
+}
