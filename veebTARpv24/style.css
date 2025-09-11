@@ -1,3 +1,9 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 header{
     background-color: pink;
     letter-spacing: 0.1cm;
@@ -28,10 +34,11 @@ footer{
 section#osa1{
     border-left: 1px double lightcoral;
     border-right: 1px double lightcoral;
-    width: 50%;
+    width: 45%;
     border-radius: 100px;
     padding: 2%;
     display: inline-block;
+    background: #fff0f5;
     /*font-variant: small-caps;*/
     /*font-family: "Broadway";*/
 }
@@ -48,11 +55,12 @@ section#osa1 div{
 section#osa2{
     border-left: 5px dashed lightpink;
     border-right: 5px dashed lightpink;
-    width: 30%;
+    width: 45%;
     border-radius: 60px;
     padding: 2%;
     text-align: center;
     display: inline-block;
+    background: #fff0f5;
 }
 section#osa2 h2{
      font-variant: small-caps;
@@ -70,6 +78,9 @@ nav ul {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    padding: 10px 10px;
+    font-size: 22px;
+    min-width: none;
 }
 
 nav ul li {
@@ -170,4 +181,148 @@ section#lingid li a{
 section#lingid li a:hover{
     background-color: lightpink;
     color: white;
+}
+
+section#tehtud {
+    border-left: 1px double lightpink;
+    border-right: 1px double lightpink;
+    width: 45%;
+    border-radius: 50px;
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+    background: #fff0f5;
+}
+
+section#tehtud h2 {
+    font-variant: small-caps;
+    font-family: "Elephant";
+    color: hotpink;
+    margin-bottom: 20px;
+}
+section#tehtud li {
+    overflow: hidden;
+    text-align: center;
+    margin: 4%;
+}
+section#tehtud ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+section#tehtud li a{
+    display: flex;
+    padding: 12px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+section#tehtud li a:hover{
+    background-color: lightpink;
+    color: white;
+}
+
+section#php {
+    border-left: 1px double lightpink;
+    border-right: 1px double lightpink;
+    width: 45%;
+    border-radius: 50px;
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+    background: #fff0f5;
+}
+
+section#php h2 {
+    font-variant: small-caps;
+    font-family: "Elephant";
+    color: hotpink;
+    margin-bottom: 20px;
+}
+section#php li {
+    overflow: hidden;
+    text-align: center;
+    margin: 4%;
+}
+section#php ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+section#php li a{
+    display: flex;
+    padding: 12px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+section#php li a:hover{
+    background-color: lightpink;
+    color: white;
+}
+ .container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+.piece {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    animation: rotate 4s linear infinite;
+}
+
+.piece1 {
+    top: 0;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.piece2 {
+    top: 0;
+    left: 100px;
+    animation-delay: 1s;
+}
+
+.piece3 {
+    top: 100px;
+    left: 0;
+    animation-delay: 2s;
+}
+
+.piece4 {
+    top: 100px;
+    left: 100px;
+    animation-delay: 3s;
+}
+
+.piece img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.piece1 img { top: 0; left: 0; }
+.piece2 img { top: 0; left: -100px; }
+.piece3 img { top: -100px; left: 0; }
+.piece4 img { top: -100px; left: -100px; }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
