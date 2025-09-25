@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormid HTML keeles</title>
+</head>
+<link rel="stylesheet" href="vormStyle.css">
+<body>
+<h1>Matemaatika teadmiste küsimusik</h1>
+<form action="kysimusik">
+<table border="1">
+        <tr>
+        <td><lable for="nimi">Nimi</lable></td>
+            <!--Teksti jaoks -->
+        <td><input type="text" id = "kys1" name="nimi" placeholder="Eesnimi"></td>
+        </tr>
+        <tr>
+            <td><label for="ryhm">Väli rühm: </label></td>
+            <td><select name="ryhm" id="ryhm">
+                <option value="..."></option>
+                <option value="TARpv21">TARpv21</option>
+                <option value="TARpv22">TARpv22</option>
+                <option value="TARpv23">TARpv23</option>
+                <option value="TARpv24">TARpv24</option>
+                <option value="TARpv25">TARpv25</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Küsimus 1: 2+2*2</td>
+            <!--Vastuse valimiseks-->
+            <td><input type="radio" name="kysimus1" id="vastus">
+                <label for="vastus">9</label>
+                <input type="radio" name="kysimus1" id="vastus2">
+                <label for="vastus2">6</label>
+                <input type="radio" name="kysimus1" id="vastus3">
+                <label for="vastus3">8</label></td>
+        </tr>
+        <tr>
+            <td>Millest koosneb kera - шар?</td>
+            <!--Mitme vastuse valimiseks-->
+            <td><input type="checkbox" name="kysimus2" id="keravastus1">
+                <lable for="keravastus1">Keskpunktist</lable>
+                <input type="checkbox" name="kysimus2" id="keravastus2">
+                <lable for="keravastus2">Pinnast</lable>
+                <input type="checkbox" name="kysimus2" id="keravastus3">
+                <lable for="keravastus3">Kolmnurgast</lable>
+                <input type="checkbox" name="kysimus2" id="keravastus4">
+                <lable for="keravastus4">Läbimõõdust</lable></td>
+        </tr>
+        <tr>
+            <td>Millal on piipäev ?</td>
+            <td><label for="pi">Vali 0 ja 15 vahel</label>
+                <!--Liugur-->
+                <input type="range" id="pi">
+        </tr>
+        <tr>
+            <td>Kui vana on Pythagoras?</td>
+            <!--Numbrite sisestamine küljel olevate nooltega-->
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td><label for="lahenda"></label>Lahenda 120 * 34</td>
+            <!--Suure tekstikoguse sisestamiseks-->
+            <td><input type="textarea" nimi="lahenda" id="lahenda" placeholder="Vastus sinu"></td>
+        </tr>
+        <tr>
+            <td>Millal tähistatakse pii päeva?</td>
+            <!--Kuupäeva valimiseks-->
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Määrake matemaatikaga seotud värv</td>
+            <!--Värvi valimiseks-->
+            <td><input type="color"></td>
+        </tr>
+        <tr>
+            <td>Laadige alla funktsiooni y = x² graafiku pilt</td>
+            <!--Et saaks faili alla laadida-->
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td>Sisesta oma e-posti aadress</td>
+            <!--E-posti sisestamiseks-->
+            <td><input type="email" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td>
+                <!--Küsimused otse vormis-->
+                <fieldset>
+                    <legend>Milliseid numbreid me kasutame?</legend>
+
+                    <input type="radio" id="kysim1">
+                    <label for="kysim1">Rooma numbrid</label>
+                    <br>
+                    <input type="radio" id="kysim2">
+                    <label for="kysim2">Araabia numbrid</label>
+                    <br>
+                    <input type="radio" id="kysim3">
+                    <label for="kysim3">Nikita Nikiforovi nimega seotud numbrid</label>
+                </fieldset>
+            </td>
+        </tr>
+
+        <tr>
+            <!--Nupp-->
+            <td><input type="button" id="Salvesta" value="Salvesta"></td>
+            <!--Vormi tühistamise nupp-->
+            <td><input type="reset" value="Loobu" id="Loobu"></td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
