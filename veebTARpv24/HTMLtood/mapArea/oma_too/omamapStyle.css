@@ -1,0 +1,24 @@
+div#info{
+    position: absolute;
+    top: 50px;
+    right: 350px;
+    width: 40%;
+    height: 300px;
+    padding: 2%;
+    background: greenyellow;
+    border-radius: 5%;
+}
+
+img#usbA,
+img#usbB,
+img#ethernet,
+img#displayport,
+img#charging,
+img#usbminiB,
+img#usbminiA,
+img#mic,
+img#headphone,
+img#hdmi {
+    height: 250px;
+    width: 250px;
+}

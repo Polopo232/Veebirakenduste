@@ -169,14 +169,6 @@ section#php h2 {
     margin-bottom: 20px;
 }
 
-section#lingid li,
-section#tehtud li,
-section#php li {
-    overflow: hidden;
-    text-align: center;
-    margin: 4%;
-}
-
 section#lingid ul,
 section#tehtud ul,
 section#php ul {
@@ -184,19 +176,31 @@ section#php ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#lingid li,
+section#tehtud li,
+section#php li {
+    overflow: hidden;
+    text-align: center;
+    margin: 10px 0;
+    width: 80%;
 }
 
 section#lingid li a,
 section#tehtud li a,
 section#php li a {
     display: flex;
+    justify-content: center;
     padding: 12px;
     background-color: gray;
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 30px;
+    width: 100%;
 }
 
 section#lingid li a:hover,
@@ -205,6 +209,7 @@ section#php li a:hover {
     background-color: lightpink;
     color: white;
 }
+
  .container {
     position: relative;
     width: 200px;

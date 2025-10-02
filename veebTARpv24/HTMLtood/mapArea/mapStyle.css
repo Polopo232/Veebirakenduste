@@ -1,0 +1,22 @@
+div#info{
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    width: 40%;
+    height: 300px;
+    padding: 2%;
+    background: greenyellow;
+    border-radius: 5%;
+}
+img#lisapilt{
+    width: 781px;
+    height: 176px;
+}
+img#glass{
+    width: 781px;
+    height: 263px;
+}
+img#rect{
+    height: 306px;
+    width: 781px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormist lugemine JS abil</title>
+    <script src="vormScript.js"></script>
+
+</head>
+<body>
+<form action="">
+    <label for="nimi">Kirjuta oma niim</label>
+    <input type="text" id="nimi" placeholder="Eesnimi" oninput="nimiLugemine()">
+    <div id="vastus1"></div>
+    <br>
+    <input type="radio" name="sugu" id="naine" value="Sa oled naine" onchange="valiSugu()">
+    <label for="naine">Naine</label>
+    <input type="radio" name="sugu" id="mees" value="Sa oled mees" onchange="valiSugu()">
+    <label for="mees">Mees</label>
+    <input type="radio" name="sugu" id="laps" value="Sa oled laps" onchange="valiSugu()">
+    <label for="laps">Laps</label>
+    <br>
+    <div id="vastus2"></div>
+    <br>
+    <label for="varv">Vali oma lemikvärv</label>
+    <input type="color" id="varv">
+    <input type="button" value="Värvi" onclick="valiVarv()"> <br>
+
+    <label for="slider">Hinda ennast matemaatikast</label>
+    0<input type="range" id="slider" min="0" max="100" onchange="sliderLiigub()">100
+    <div id="vastus3"></div>
+    <br>
+    <label for="koht">Vali oma sünnikoht</label>
+    <select name="koht" id="koht" onchange="valiKoht()">
+        <option value="koht">...</option>
+        <option value="Tallinn">Tallinn</option>
+        <option value="Tartu">Tartu</option>
+        <option value="Tapa">Tapa</option>
+    </select>
+    <div id="vastus4"></div>
+    <br>
+    <fieldset>
+        <legend>Tee oma valik</legend>
+    <input type="checkbox" name="valik" id="java" value="Java" oninput="teeValik()">
+    <label for="java">Java</label> <br>
+    <input type="checkbox" name="valik" id="python" value="Python" oninput="teeValik()">
+    <label for="python">Python</label> <br>
+    <input type="checkbox" name="valik" id="php" value="PHP" oninput="teeValik()">
+    <label for="php">PHP</label> <br>
+    <input type="checkbox" name="valik" id="javascript" value="JavaScript" oninput="teeValik()">
+    <label for="javascript">JavaScript</label>
+    <div id="vastus5"></div>
+    </fieldset>
+
+
+    <input type="button" value="Puhasta" onclick="puhasta()">
+</form>
+
+</body>
+</html>

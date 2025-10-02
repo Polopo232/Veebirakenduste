@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Õpilase Registreerinisvorm</title>
+</head>
+<body>
+<fieldset>
+  <legend>Isikuandmed</legend>
+
+  <label for="kys1">Eesnimi</label>
+  <br>
+  <input type="text" id = "kys1" name="nimi" placeholder="nt Mario"> <br>
+
+  <label for="kys2">Perenimi</label>
+  <br>
+  <input type="text" id = "kys2" name="perenimi" placeholder="nt Metshein"> <br>
+
+  <label for="supaev">Sünnikupäev</label>
+  <br>
+  <input type="date" id = "supaev" name="sunnipaev" placeholder=""> <br>
+
+  <label for="sugu">Sugu</label>
+  <br>
+  <input type="radio" id = "sugu" name="sugu">
+  <label for="sugu">Mees</label>
+  <input type="radio" id = "sugu1" name="sugu">
+  <label for="sugu1">Naine</label>
+  <input type="radio" id = "sugu2" name="sugu">
+  <label for="sugu2">Muu</label>
+</fieldset>
+<fieldset>
+  <legend>Kontakt</legend>
+
+  <label for="email">Epost</label>
+  <br>
+  <input type="email" id = "email" name="email" placeholder="nt nimi@kool.ee"> <br>
+
+  <label for="phone">Mobiiltelefon</label>
+  <br>
+  <input type="text" id="phone" name="phone" placeholder="+372 555555"> <br>
+
+  <label for="aadress">Aadress</label>
+  <br>
+  <textarea name="adress" id="aadress" cols="25" rows="5" placeholder="Tänav, maja, korter"></textarea> <br>
+
+  <label for="linn">Linn/ asula</label>
+  <br>
+  <input type="text" id="linn" name="linn" placeholder="nt Tallinn"><br>
+
+  <label for="postiindeks">Postiindeks<</label><br>
+  <input type="text" id="postiindeks" name="postiindeks" placeholder="nt 11100"><br>
+
+  <label for="riik">Riik</label>
+  <br>
+  <input type="text" id="riik" name="riik" readonly="Eesti"><br>
+</fieldset>
+<fieldset>
+  <legend>Muu info</legend>
+
+  <label for="joon">Huvialad</label> <br>
+  <input type="checkbox" name="kysimus2" id="joon">
+  <lable for="joon">Joonistamine</lable>
+  <input type="checkbox" name="kysimus2" id="laul">
+  <lable for="laul">Laulmine</lable>
+  <input type="checkbox" name="kysimus2" id="tant">
+  <lable for="tant">Tantsime</lable>
+  <br>
+  <label for="muu">Kokkamine</label> <br>
+  <input type="checkbox" name="kysimus2" id="muu">
+  <lable for="muu">Muu</lable>
+  <input type="text" id="muu1" name="muu" placeholder="täpsuta (kuni 30 mark)"> <br>
+
+  <label for="veb">Isiklik veebileht</label> <br>
+  <input type="text" id="veb" name="veb" placeholder="minuleht.ee"><br>
+
+  <label>Eelistatud teemavärv (valikuline)</label> <br>
+  
+
+  <label>Dokumendid (PDF või pilt)</label> <br>
+
+  <input type="file" id="dokumendid" name="dokumendid" accept=".pdf, image/*"> <br>
+  <span class="file-name">No files selected.</span> <br>
+  </fieldset>
+
+  <fieldset>
+  <legend>Nõustamine</legend>
+  <input type="checkbox" id="kinnitus" name="kinnitus">
+  <label for="kinnitus">Kinnitan, et esitatud andmed on õiged ja luban nende töötlemist vastavalt kooli tingimustele.</label> <br>
+</fieldset>
+
+        
+<div id="nupud">
+  <button type="submit">Saada</button>
+  <button type="reset">Tühjenda</button>
+</div>
+
+
+</body>
+</html>

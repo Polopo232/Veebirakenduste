@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pildimap</title>
+    <link rel="stylesheet" href="mapStyle.css">
+</head>
+<body>
+
+<h1>Pildikaarti loomine map/area abil</h1>
+<img src="mapArea_img.png" alt="smile" usemap="#Kuub">
+<map name="Kuub">
+    <!--ring - circle coords (x, r, R)-->
+    <area shape="circle" coords="150,206, 31" href="ring.html" alt="ring">
+    <!--poly - polügon-kolmnurk-punktid loeme vasakult paremale -->
+    <area shape="poly" coords="66,134,97,77,130,134" href="glass.html" alt="glass">
+    <!--rect ristkülik-->
+    <area shape="rect" coords="165, 60, 237, 169" href="rect.html" alt="rect">
+</map>
+<div id = "info">
+    The SVG element is a basic SVG shape that draws rectangles, defined by their position, width, and height.
+    <img id ="rect" src="https://proproprogs.ru/htm/modules/files/klass-rect-ego-rol-svoystva-i-metody.files/image002.png" alt="">
+</div>
+
+</body>
+</html>
