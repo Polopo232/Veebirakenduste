@@ -1,0 +1,101 @@
+<!DOCTYPE html><!--html5 on deklareeritud -->
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Nikita veebirakenduste koduleht</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+            integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI="
+            crossorigin="anonymous"></script>
+    <script>
+        function startFunc() {
+            $('#pilot').draggable()
+
+            $('#kodu').mouseenter(sca)
+            $('#kodu').mouseleave(rec)
+
+            $('#main_h1').mouseenter(animate)
+            $('#main_h1').mouseleave(animate_back)
+
+            fade_nav()
+        }
+
+        function animate() {
+            $('#main_h1').animate({left: '500px'}, 1000)
+        }
+        function animate_back() {
+            $('#main_h1').animate({left: '0px'}, 1000)
+        }
+
+        function sca() {
+            $('#kodu').css('transform', 'scale(15, 1)');
+        }
+        function rec() {
+            $('#kodu').css('transform', 'scale(1, 1)');
+        }
+
+        function fade_nav() {
+            $('#kodu').fadeIn(1000)
+            $('#teemad').fadeIn(2000)
+            $('#tehtud').fadeIn(3000)
+            $('#oma_fail').fadeIn(4000)
+            $('#meedia').fadeIn(5000)
+            $('#wordpress').fadeIn(6000)
+
+        }
+    </script>
+</head>
+<body onload="startFunc()">
+<!--päis - шапка - header-->
+<header>
+    <h1 id="main_h1">Nikita veebirakenduste koduleht</h1>
+</header>
+<!--navigeerimius menüü-->
+<nav>
+    <ul>
+        <li id="kodu"><a href="index.html">Kodu</a></li>
+        <li id="teemad"><a href="teemad.html">Teemad/Lingid</a></li>
+        <li id="tehtud"><a href="tehtud.html">Tehtud tööd</a></li>
+        <li id="oma_fail"><a href="oma_fail.html">Oma fail</a></li>
+        <li id="meedia"><a href="meedia.html">Meedia</a></li>
+        <li id="wordpress"><a href="https://nikitanikiforov24.thkit.ee/wp/">Wordpress</a></li>
+    </ul>
+</nav>
+<!--Main - sisu-->
+<main>
+    <section id="osa1">
+        <h2>Date</h2>
+        <button onclick="$('#hide').hide(2000) ,näitaKuupaevJaAeg()" id="hide">Näita kuupäeva ja aega</button>
+        <button onclick="$('#hide').show(2000) ,kuniMärtsini()">Aeg kuni 15. märtsini</button>
+        <div id="output"></div>
+    </section>
+    <section id="osa2">
+        <h2>Hea pilt</h2>
+        <img src="pilot.jpg" alt="pilot" id="pilot">
+    </section>
+    <section id="jQuery">
+        <h2>jQuery</h2>
+        <div id="jQtext">
+            <ul>
+                <li>Nuppude kuvamine ja peitmine Date'is</li>
+                <li>Pilt, mida saab liigutada</li>
+                <li>Nupu „Kodu” laiendamine hiirega üle libistamisel</li>
+                <li>FadeIn navigatsioonimenüü</li>
+                <li>Pealkiri (h1) animatsiooniga</li>
+            </ul>
+        </div>
+    </section>
+</main>
+<!--jalus - подвал-->
+<footer>
+    <strong>Kontakteeri minuga:</strong>
+    nikiforovnikita08@gmail.com <br>
+    &copy; Nikita Nikiforov
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

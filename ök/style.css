@@ -1,0 +1,371 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ #kodu, #teemad, #tehtud, #oma_fail, #meedia, #wordpress {
+     display: none;
+ }
+
+
+#main_h1 {
+    position: relative;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+    align-items: flex-start;
+}
+
+header{
+    background-color: pink;
+    letter-spacing: 0.1cm;
+    padding: 2%;
+    font-variant: small-caps;
+    font-family: "Ink Free";
+    font-size: x-large;
+    background-image: url('pilot.jpg');
+    background-repeat: no-repeat;
+    background-size: 150px 200px;
+}
+header h1{
+    margin-left: 150px;
+}
+img{
+    width: 250px;
+}
+footer{
+    background-color: #b5b6b5;
+    border-top: 2px solid black; /*dotted, dashed, double */
+    padding-top: 1%;
+    text-align: center;
+}
+section#osa1,
+section#jQuery{
+    border-left: 1px double lightcoral;
+    border-right: 1px double lightcoral;
+    width: 45%;
+    border-radius: 100px;
+    padding: 2%;
+    display: inline-block;
+    background: #fff0f5;
+    /*font-variant: small-caps;*/
+    /*font-family: "Broadway";*/
+}
+
+section#osa1 h2,
+section#jQuery h2{
+    font-variant: small-caps;
+    font-family: "Cooper Black";
+    font-size: x-large;
+    text-align: center;
+}
+section#osa1 div{
+    padding: 1%;
+    font-family: "Sour Gummy";
+}
+section#osa2{
+    border-left: 5px dashed lightpink;
+    border-right: 5px dashed lightpink;
+    width: 45%;
+    border-radius: 60px;
+    padding: 2%;
+    text-align: center;
+    display: inline-block;
+    background: #fff0f5;
+}
+section#osa2 h2{
+     font-variant: small-caps;
+     font-family: "Broadway";
+ }
+section#osa2 img{
+    padding: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #b5b6b5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    font-size: 22px;
+    min-width: none;
+}
+
+nav ul li {
+    float: left;
+    border-left: 1px double lightpink;
+    border-right: 1px double lightpink;
+    border-radius: 50px;
+}
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-variant: small-caps;
+    font-family: "Impact";
+}
+nav ul li a:hover {
+    background-color: lightpink;
+    color: white;
+    border-radius: 50px;
+}
+
+section#teemad {
+    border-left: 1px double lightpink;
+    border-right: 1px double lightpink;
+    width: 45%;
+    border-radius: 50px;
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+    background: #fff0f5;
+}
+
+section#teemad h2 {
+    font-variant: small-caps;
+    font-family: "Elephant";
+    color: hotpink;
+    margin-bottom: 20px;
+}
+section#teemad li {
+    background-color: white;
+    color:black;
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: default;
+    user-select: none;
+    min-width: 100px;
+    text-align: center;
+}
+selection#teemad ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+section#lingid,
+section#tehtud,
+section#php {
+    border-left: 1px double lightpink;
+    border-right: 1px double lightpink;
+    width: 45%;
+    border-radius: 50px;
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+    background: #fff0f5;
+}
+
+section#lingid h2,
+section#tehtud h2,
+section#php h2 {
+    font-variant: small-caps;
+    font-family: "Elephant";
+    color: hotpink;
+    margin-bottom: 20px;
+}
+
+section#lingid ul,
+section#tehtud ul,
+section#php ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#lingid li,
+section#tehtud li,
+section#php li {
+    overflow: hidden;
+    text-align: center;
+    margin: 10px 0;
+    width: 80%;
+}
+
+section#lingid li a,
+section#tehtud li a,
+section#php li a {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 100%;
+}
+
+section#lingid li a:hover,
+section#tehtud li a:hover,
+section#php li a:hover {
+    background-color: lightpink;
+    color: white;
+}
+
+ .container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+.piece {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    animation: rotate 4s linear infinite;
+}
+
+.piece1 {
+    top: 0;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.piece2 {
+    top: 0;
+    left: 100px;
+    animation-delay: 1s;
+}
+
+.piece3 {
+    top: 100px;
+    left: 0;
+    animation-delay: 2s;
+}
+
+.piece4 {
+    top: 100px;
+    left: 100px;
+    animation-delay: 3s;
+}
+
+.piece img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.piece1 img { top: 0; left: 0; }
+.piece2 img { top: 0; left: -100px; }
+.piece3 img { top: -100px; left: 0; }
+.piece4 img { top: -100px; left: -100px; }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+section#pildi,
+section#yt_video,
+section#google_maps,
+section#spotify_music {
+    border-left: 1px double lightpink;
+    border-right: 1px double lightpink;
+    width: 45%;
+    border-radius: 50px;
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+    background: #fff0f5;
+}
+
+section#pildi h2,
+section#yt_video h2,
+section#spotify_music h2,
+section#google_maps h2{
+    font-variant: small-caps;
+    font-family: "Elephant";
+    color: hotpink;
+    margin-bottom: 20px;
+}
+
+section#pildi li,
+section#yt_video li,
+section#spotify_music li,
+section#google_maps li{
+    overflow: hidden;
+    text-align: center;
+    margin: 4%;
+}
+section#pildi ul,
+section#yt_video ul,
+section#spotify_music ul,
+section#google_maps ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+section#pildi li a,
+section#yt_video li a,
+section#spotify_music li a,
+section#google_maps li a{
+    display: flex;
+    padding: 12px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+section#pildi li a:hover,
+section#yt_video li a:hover,
+section#spotify_music li a:hover,
+section#google_maps li a:hover {
+    background-color: lightpink;
+    color: white;
+}
+section#pildi img{
+    width: 250px;
+}
+
+#osa1 button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    max-width: 250px;
+    width: 100%;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #ccc;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
