@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: gray;
+    padding: 20px;
+}
+
+.viga{color:#F00; padding-left:10px; display: none}
+
+h1{
+    color:white;
+    text-align: center;
+    font-size: 50px;
+}
+
+form {
+    max-width: 75%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+table td {
+    width: 75%;
+}
+
+td {
+    padding: 12px 15px;
+
+}
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: black;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+input[type="number"],
+textarea,
+select,
+input[list] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+input[type="button"] {
+    background-color: lightgreen;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    margin-right: 10px;
+    align-items: center;
+}
+input[type="reset"] {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+input[type="button"]:hover {
+    background-color: limegreen;
+}
+input[type="reset"]:hover {
+    background-color: red;
+}
+
+#bandanswer,
+#interviewanswer,
+#numberanswer,
+#radioanswer,
+#datalistanswer,
+#genreanswer,
+#summary {
+    padding: 10px;
+    background: #f4f7fb;
+    border-radius: 5px;
+    border: 1px solid #d1e3fc;
+    min-height: 30px;
+    color: black;
+}
