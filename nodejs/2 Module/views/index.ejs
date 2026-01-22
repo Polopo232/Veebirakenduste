@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="et">
+<%- include('includes/head') %>
+<body>
+<%- include('includes/nav') %>
+
+<main class="container my-4">
+    <% if (uudised.length > 0) { %>
+        <% uudised.forEach(uudis => { %>
+            <h2><%= uudis.pealkiri %></h2>
+            <p><%= uudis.sisu %></p>
+        <% }); %>
+    <% } else { %>
+        <p>Uudiseid ei ole.</p>
+    <% } %>
+</main>
+
+<%- include('includes/footer') %>
+</body>
+</html>

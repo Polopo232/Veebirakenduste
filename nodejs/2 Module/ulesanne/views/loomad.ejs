@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="et">
+<%- include('includes/head') %>
+<body>
+<%- include('includes/nav') %>
+
+<div class="container my-4">
+    <h1>Loomad</h1>
+    <div class="row">
+        <% loomad.forEach(looma => { %>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="<%= looma.image %>" class="card-img-top" alt="<%= looma.name %>">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= looma.name %></h5>
+                        <p class="card-text"><strong>Liik:</strong> <%= looma.species %></p>
+                        <p class="card-text"><strong>Vanus:</strong> <%= looma.age %> aastat</p>
+                        <p class="card-text"><strong>Staatus:</strong> <%= looma.status %></p>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<%- include('includes/footer') %>
+</body>
+</html>

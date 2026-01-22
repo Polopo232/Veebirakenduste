@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body>
+<h1><%= title %></h1>
+
+<% news.forEach(n => { %>
+    <h2>
+        <a href="/news/<%= n.id %>"><%= n.title %></a>
+    </h2>
+    <p><%= n.content %></p>
+
+    <a href="/news/<%= n.id %>/edit">Muuda</a><br><br>
+
+    <form action="/news/delete" method="POST"
+          onsubmit="return confirm('Kas olete kindel, et soovite selle uudise kustutada?');">
+        <input type="hidden" name="id" value="<%= n.id %>">
+        <button type="submit">Kustuta</button>
+    </form>
+    <hr>
+<% }); %>
+
+<br><br><br>
+<a href="/news/create">Lisada uudis</a>
+
+</body>
+</html>
