@@ -1,0 +1,55 @@
+body {
+    background-color: #f0f2f5;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+.navbar a {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.card-news {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #fff;
+}
+
+.card-news:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-news .card-body h5 {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-news .card-text {
+    max-height: 80px; /* ограничение по высоте */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-news .btn-group {
+    margin-top: 10px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    padding: 15px;
+}
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 5px;
+    padding: 15px;
+}
